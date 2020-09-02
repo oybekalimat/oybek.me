@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Circularstd";
+  src: url("./fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circularstd";
+  src: url("./fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Circularstd", sans-serif;
+}
+
+main {
+  font-size: 24px;
+  width: 800px;
+  padding: 40px;
+  line-height: 44px;
+  letter-spacing: -0.9px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+ul {
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  transition: all ease-in 200ms;
+}
+
+a:hover {
+  border-bottom: 1px solid #000;
+}
+
+img {
+  width: 40px;
+}
