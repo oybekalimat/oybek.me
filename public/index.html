@@ -8,7 +8,13 @@
   </head>
   <body>
     <main>
-      <h1>Hi there<img src="../waving_hand.gif" /> I'm Oybek Alimat.</h1>
+      <button class="btn">
+        <img src="./moon.svg" class="moon" />
+        <img src="./sun.svg" class="sun" />
+      </button>
+      <h1>
+        Hi there<img class="emoji" src="../waving_hand.gif" /> I'm Oybek Alimat.
+      </h1>
       <p>
         A front-end developer who likes building useful, user-friendly apps with
         React. I'm currently freelancing during the day and building
@@ -23,6 +29,18 @@
         <li><a>LinkedIn</a></li>
       </ul>
     </main>
+    <script defer>
+      const prefersDarkScheme =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const btn = document.querySelector(".btn");
+      if (prefersDarkScheme) {
+        document.body.classList.add("dark");
+      }
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
     <script src="/__/firebase/7.19.1/firebase-app.js"></script>
     <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
     <script src="/__/firebase/init.js"></script>

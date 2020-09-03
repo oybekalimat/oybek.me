@@ -14,12 +14,14 @@
 
 body {
   font-family: "Circularstd", sans-serif;
+  background-color: #fff;
+  transition: all ease-out 200ms;
 }
 
 main {
   font-size: 24px;
   width: 800px;
-  padding: 40px;
+  padding: 70px 40px;
   line-height: 44px;
   letter-spacing: -0.9px;
 }
@@ -38,13 +40,54 @@ a {
   text-decoration: none;
   color: #000;
   border-bottom: 1px solid #ccc;
-  transition: all ease-in 200ms;
+  transition: all ease-out 200ms;
 }
 
 a:hover {
   border-bottom: 1px solid #000;
 }
 
-img {
+.emoji {
   width: 40px;
+}
+
+.btn {
+  position: absolute;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn img {
+  width: 100%;
+}
+
+.sun {
+  display: none;
+}
+
+body.dark {
+  background-color: #181b1d;
+  color: #b8b9b9;
+}
+
+body.dark a {
+  color: #b8b9b9;
+  border-bottom: 1px solid #313436;
+}
+
+body.dark a:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+body.dark .moon {
+  display: none;
+}
+
+body.dark .sun {
+  display: block;
 }
